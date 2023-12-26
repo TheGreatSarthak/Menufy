@@ -1,5 +1,5 @@
-import 'package:menufyy/providers/restaurant_item.dart';
-import 'package:menufyy/widgets/item.dart';
+import 'package:menufy/providers/restaurant_item.dart';
+import 'package:menufy/widgets/item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,14 +11,14 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  bool menufyy = false;
+  bool check = false;
   String condition = 'search';
 
   final _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> serachItem = menufyy == false
+    List<Map<String, dynamic>> serachItem = check == false
         ? []
         : Provider.of<Item>(context, listen: false)
             .searchItem(_controller.text);
@@ -32,11 +32,11 @@ class _SearchScreenState extends State<SearchScreen> {
             onChanged: ((value) {
               if (value.isEmpty) {
                 setState(() {
-                  menufyy = false;
+                  check = false;
                 });
               } else {
                 setState(() {
-                  menufyy = true;
+                  check = true;
                 });
               }
             }),
@@ -49,7 +49,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     onPressed: () {
                       _controller.clear();
                       setState(() {
-                        menufyy = false;
+                        check = false;
                       });
                     }),
                 focusColor: Colors.black,

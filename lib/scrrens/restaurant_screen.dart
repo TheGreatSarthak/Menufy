@@ -1,9 +1,9 @@
-import 'package:menufyy/providers/carosel_slider.dart';
-import 'package:menufyy/providers/restaurant_item.dart';
-import 'package:menufyy/scrrens/cart.dart';
-import 'package:menufyy/scrrens/fav_screen.dart';
-import 'package:menufyy/widgets/bottomnavigator.dart';
-import 'package:menufyy/widgets/item.dart';
+import 'package:menufy/providers/carosel_slider.dart';
+import 'package:menufy/providers/restaurant_item.dart';
+import 'package:menufy/scrrens/cart.dart';
+import 'package:menufy/scrrens/fav_screen.dart';
+import 'package:menufy/widgets/bottomnavigator.dart';
+import 'package:menufy/widgets/item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';

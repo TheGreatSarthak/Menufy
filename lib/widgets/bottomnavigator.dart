@@ -1,4 +1,4 @@
-import 'package:menufyy/providers/restaurant_item.dart';
+import 'package:menufy/providers/restaurant_item.dart';
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:provider/provider.dart';

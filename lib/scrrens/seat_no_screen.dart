@@ -1,5 +1,5 @@
-import 'package:menufyy/providers/table.dart';
-import 'package:menufyy/scrrens/restaurant_screen.dart';
+import 'package:menufy/providers/table.dart';
+import 'package:menufy/scrrens/restaurant_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
